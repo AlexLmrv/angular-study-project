@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-study-project';
+
+  selectedTab = 'recipe';
+
+  onNavigate(tabName: string) {
+    this.selectedTab = tabName;
+  }
 }
